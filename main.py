@@ -4,13 +4,15 @@ Example One
 my_list1 = [1, 2, 3, 4, 5, 6]
 my_list2 = my_list1
 # How would you verify that my_list1 and my_list2 have the same identity?
-print("your code here")
+print(id(my_list1))
+print(id(my_list2))
 
 my_list1.append(7)
 # Check if my_list1 and my_list2 still have the same identity.
 # If they do, why is that?
-print("your code here")
-
+print(id(my_list1))
+print(id(my_list2))
+# because my_list2 is set to equal (=) my_list1. They point the same object in memory.
 
 
 """
